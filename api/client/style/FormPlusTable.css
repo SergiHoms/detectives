@@ -1,0 +1,261 @@
+body{
+    background-color: honeydew;
+    font-family: "Poppins", Helvetica, Arial, Verdana, sans-serif;
+}
+
+.container{
+display: flex;
+position: fixed;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+.content-table{
+    background-color: whitesmoke;
+}
+
+table { 
+    border-collapse:collapse; 
+    margin: 16px 0; 
+    font-size: 1em; 
+    font-family: "Poppins", Helvetica, Arial, Verdana, sans-serif; 
+    min-width: 450px;
+    max-width: 980px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+
+
+table thead tr { 
+    background-color: cadetblue;
+    color: #ffffff; 
+    text-align: middle;
+    box-shadow: 0px 2px 4px 1px rgb(197, 193, 193);
+    
+}
+
+table th, table td { 
+    padding: 12px 15px;
+    /* border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem; */
+    
+}
+
+table tbody tr { 
+    border-bottom: 1px solid #dddddd;
+    color: black;
+    font-size: 15px;
+    
+}
+
+.iconsBox{
+display: flexbox;
+top: 50%;
+/* left: 50%; */
+    
+
+}
+
+.btns-icons{
+    width: 24px;
+    height: 24px;
+    margin-left: 1rem;
+    color: cadetblue;
+    cursor: pointer;
+}
+
+.btns-icons:hover{
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
+    transition-duration: 1s;
+    color: rgb(63, 107, 110);
+}
+
+
+
+.formBox{
+
+    background:cadetblue;
+    width: 100%;
+    margin-left: 1rem;
+    box-shadow: 0px 2px 4px 1px rgb(197, 193, 193);
+    text-align: center;
+    color: honeydew;
+}
+
+
+
+.titleForm h3{
+    font-weight: 800;
+    border-bottom: dashed 2px honeydew ;
+    padding-bottom:1rem;
+    
+}
+
+
+.contents{
+    display:grid;
+    justify-content: space-evenly;
+    width: 100%;
+    border-bottom:solid 2px honeydew;
+    margin-top:-1.2rem;
+}
+
+.subject{
+    color:honeydew;
+    padding-right: 2rem;
+    border-right: solid 2px honeydew;
+}
+
+
+.contact{
+    color:honeydew;
+    padding-left: 2rem;
+    padding-right:2rem;
+    
+    
+}
+
+
+.bird{
+    text-align: center;
+    padding-right: 2rem;
+    border-left: solid 2px honeydew;
+    
+}
+
+.birdLogo{
+    width: 84px;
+    height: 84px;
+    color:honeydew;
+    
+
+}
+
+
+.inputForm{
+    height: 4vh;
+    width: 60%;
+    border-radius:.5rem;
+    background-color: honeydew;
+    border:none;
+    box-shadow: inset 0px 2px 4px 1px rgb(197, 193, 193);
+    margin-bottom:1rem;
+    font-size: 15px;
+}
+
+.inputForm:focus::placeholder{
+    opacity: .2;
+}
+
+
+.inputFormArea{
+    height: 12vh;
+    width: 80%;
+    border-radius:.5rem;
+    background-color: honeydew;
+    border:none;
+    box-shadow: inset 0px 2px 4px 1px rgb(197, 193, 193);
+    margin-bottom:1rem;
+    font-size: 15px;
+    resize:none;
+}
+
+.inputForm:focus{
+    outline: none;
+}
+
+.inputFormArea:focus{
+    outline: none;
+}
+
+
+/* modal delete */
+
+.modalDelete{
+    background-color: cadetblue;
+    border-radius:.5rem;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+.headerModal{
+    float: right;
+    top: 0;
+    margin-top: -2rem;
+}
+
+.headerModal h4{
+    padding:1rem;
+    nav-right:0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.headerModal h4:hover{
+    color:brown;
+}
+
+.mainModal{
+    text-align: center;
+    color:honeydew;
+    padding-top:2rem;
+
+}
+
+.footerModal{
+    text-align: center;
+}
+
+.btnModal{
+    width: 45%;
+    border:none;
+    border-radius:.5rem;
+    margin:1rem;
+    cursor: pointer;
+}
+
+.btnModal:hover{
+    box-shadow: 0px 2px 4px 1px rgb(197, 193, 193);
+    background-color: honeydew;
+    transition-duration: 1s;
+}
+
+.birdLogoModal{
+    width: 44px;
+    height: 44px;
+    color:honeydew;
+    justify-content: center;
+    text-align: center;
+}
+
+.svgModal{
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* modal email */
+
+.modalEmail{
+    background-color: cadetblue;
+    border-radius:.5rem;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
